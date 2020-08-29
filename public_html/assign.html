@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Question:Consider a web page of 1200px. The code for body section is given below. 
+At what position the text inside the second column will start?
+
+Answer:Web page is 1200px. Contain-fluid will add padding-left:15px;padding-right:15px.
+Row class will add margin-left:-15px and margin-right:-15px; So total width available for columns is 1200px.
+1200px will be equally divided into 12 columns. First div contains col-xs-8. So 0px - 800px will be alloted to first div. 
+col-xs-offset-2 will take 800px - 1000px. So the position of second div element is 1000px - 1200px.
+Column classes col-xs-2 adds padding of 15px. So the text Column 2 will start from 1015px.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+       
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .style{
+            border: 1px solid #000;
+        }
+    </style>
+        
+    </head>
+    <body>
+      <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-8">
+            Column1
+        </div>
+        <div class="col-xs-2 col-xs-offset-2">
+            Column2
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
